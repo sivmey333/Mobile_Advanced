@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: Text('GeeksForGeeks'),
           backgroundColor: Colors.green,
         ),
@@ -23,8 +24,8 @@ class MyApp extends StatelessWidget {
             width: 200,
             height: 150,
             child: AutoSizeText(
-              'Hello Geeks!. we will break this line into 3 lines!!',
-              style: TextStyle(fontSize: 30),
+              'Hello Geeks!. we will break this line into 3 lines!! I love you so much. Did you know?',
+              style: Theme.of(context).textTheme.titleLarge,
               maxLines: 3,
             ),
           ),
