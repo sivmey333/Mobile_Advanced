@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_advanced_test1/home_page.dart';
+import 'package:mobile_advanced_test1/second.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               titleLarge:
                   TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
               bodyMedium: TextStyle(fontSize: 14.0, fontFamily: 'Angkor'))),
-      home: const Home(
+      home: const Second(
         title: appName,
       ),
     );
