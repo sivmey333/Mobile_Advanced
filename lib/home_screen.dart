@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_advanced_test1/page2.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Geeks For Geeks'),
+        title: const Text('Named Route'),
         backgroundColor: Colors.amber,
         foregroundColor: Colors.white,
       ),
@@ -23,8 +22,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Page2()));
+              Navigator.pushNamed(context, '/second');
             },
             child: const Text('Click Me!')),
       ),
